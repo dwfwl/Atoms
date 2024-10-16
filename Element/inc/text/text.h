@@ -1,4 +1,5 @@
-#pragma once
+#include <opengl/Shaders/shader.h>
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <vector>
@@ -7,10 +8,6 @@
 
 #include <ft2build.h>
 #include FT_FREETYPE_H  
-
-#include <opengl/Pipeline/VAO.h>
-#include <opengl/Pipeline/VBO.h>
-#include <opengl/Shaders/shader.h>
 
 struct Character {
     unsigned int TextureID;
@@ -22,15 +19,19 @@ struct Character {
 class Text
 {
 public:
+    Text();
+    void Draw(const std::string& text, float x, float y, float scale, glm::vec3 color);
+
+private:
     FT_Library ft;
     FT_Face face;
-    std::map<char, Character> Characters;
-
     uint32_t vao;
     uint32_t vbo;
     Shader shader;
 
-    Text();
-    void Draw(const std::string& text, float x, float y, float scale, glm::vec3 color);
+private:
+    std::map<char, Character> Characters;
+
+private:
     void Clean();
 };

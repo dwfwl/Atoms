@@ -18,10 +18,17 @@
     <ClCompile Include="src\entryPoint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="inc\Atoms\Atoms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Atoms\atoms.h">
+    <ClInclude Include="inc\Atoms\Atoms.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inc\default\default.frag" />
+    <None Include="inc\default\default.vert" />
   </ItemGroup>
 </Project>

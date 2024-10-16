@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="inc\element.h">
+    <ClInclude Include="inc\element\element.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inc\opengl\Pipeline\EBO.h">
@@ -36,12 +36,18 @@
     <ClInclude Include="inc\text\text.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inc\periodicTable.h">
+    <ClInclude Include="inc\periodicTable\periodicTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\EventHandler\command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\eventHandler\inputHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\element.cpp">
+    <ClCompile Include="inc\element\element.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stb.cpp">
@@ -50,16 +56,29 @@
     <ClCompile Include="glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\text.cpp">
+    <ClCompile Include="inc\text\text.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\periodicTable.cpp">
+    <ClCompile Include="inc\periodicTable\periodicTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inc\opengl\Pipeline\src\EBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inc\opengl\Pipeline\src\VAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inc\opengl\Pipeline\src\VBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inc\opengl\Pipeline\src\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inc\opengl\Shaders\shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="inc\opengl\Shaders\default\default.frag" />
-    <None Include="inc\opengl\Shaders\default\default.vert" />
     <None Include="inc\text\shaders\text.vert" />
     <None Include="inc\text\shaders\text.frag" />
   </ItemGroup>

@@ -72,22 +72,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Element\inc;D:\coding\Atoms\Atoms\include;D:\coding\Atoms\Atoms\external;$(IncludePath)</IncludePath>
+    <IncludePath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Element\inc;D:\coding\Atoms\Atoms\inc;D:\coding\Atoms\Atoms\external;$(IncludePath)</IncludePath>
     <LibraryPath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Atoms\external;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Element\inc;D:\coding\Atoms\Atoms\include;D:\coding\Atoms\Atoms\external;$(IncludePath)</IncludePath>
+    <IncludePath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Element\inc;D:\coding\Atoms\Atoms\inc;D:\coding\Atoms\Atoms\external;$(IncludePath)</IncludePath>
     <LibraryPath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Atoms\external;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Element\inc;D:\coding\Atoms\Atoms\include;D:\coding\Atoms\Atoms\external;$(IncludePath)</IncludePath>
+    <IncludePath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Element\inc;D:\coding\Atoms\Atoms\inc;D:\coding\Atoms\Atoms\external;$(IncludePath)</IncludePath>
     <LibraryPath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Atoms\external;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Element\inc;D:\coding\Atoms\Atoms\include;D:\coding\Atoms\Atoms\external;$(IncludePath)</IncludePath>
+    <IncludePath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Element\inc;D:\coding\Atoms\Atoms\inc;D:\coding\Atoms\Atoms\external;$(IncludePath)</IncludePath>
     <LibraryPath>D:\coding\Atoms\Element\ext;D:\coding\Atoms\Atoms\external;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="inc\Atoms\Atoms.cpp" />
     <ClCompile Include="src\entryPoint.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -159,7 +160,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Atoms\atoms.h" />
+    <ClInclude Include="inc\Atoms\Atoms.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inc\default\default.frag" />
+    <None Include="inc\default\default.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

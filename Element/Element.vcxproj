@@ -148,25 +148,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="inc\element.h" />
+    <ClInclude Include="inc\element\element.h" />
+    <ClInclude Include="inc\EventHandler\command.h" />
+    <ClInclude Include="inc\eventHandler\inputHandler.h" />
     <ClInclude Include="inc\opengl\Pipeline\EBO.h" />
     <ClInclude Include="inc\opengl\Pipeline\Texture.h" />
     <ClInclude Include="inc\opengl\Pipeline\VAO.h" />
     <ClInclude Include="inc\opengl\Pipeline\VBO.h" />
     <ClInclude Include="inc\opengl\Shaders\shader.h" />
-    <ClInclude Include="inc\periodicTable.h" />
+    <ClInclude Include="inc\periodicTable\periodicTable.h" />
     <ClInclude Include="inc\text\text.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
-    <ClCompile Include="src\periodicTable.cpp" />
-    <ClCompile Include="src\text.cpp" />
+    <ClCompile Include="inc\opengl\Pipeline\src\EBO.cpp" />
+    <ClCompile Include="inc\opengl\Pipeline\src\Texture.cpp" />
+    <ClCompile Include="inc\opengl\Pipeline\src\VAO.cpp" />
+    <ClCompile Include="inc\opengl\Pipeline\src\VBO.cpp" />
+    <ClCompile Include="inc\opengl\Shaders\shader.cpp" />
+    <ClCompile Include="inc\periodicTable\periodicTable.cpp" />
+    <ClCompile Include="inc\text\text.cpp" />
     <ClCompile Include="stb.cpp" />
-    <ClCompile Include="src\element.cpp" />
+    <ClCompile Include="inc\element\element.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="inc\opengl\Shaders\default\default.frag" />
-    <None Include="inc\opengl\Shaders\default\default.vert" />
     <None Include="inc\text\shaders\text.frag" />
     <None Include="inc\text\shaders\text.vert" />
   </ItemGroup>
